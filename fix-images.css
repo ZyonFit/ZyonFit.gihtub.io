@@ -1,6 +1,6 @@
 .pic{overflow:hidden;background:radial-gradient(circle at 50% 45%,#1b211e 0,#0c100e 58%,#070807 100%)}
-.pic img{display:block!important;object-position:center center!important;transform:none!important;max-width:100%!important;max-height:100%!important;filter:none!important;box-sizing:border-box!important}
-.pic.shirt img{width:94%!important;height:94%!important;object-fit:contain!important;padding:0!important}
-.pic.bottle img{width:88%!important;height:92%!important;object-fit:contain!important;object-position:center center!important;padding:0!important;transform:none!important}
-.pic.shaker img{width:92%!important;height:92%!important;object-fit:contain!important;padding:0!important;transform:none!important}
+.pic img{display:block!important;object-position:center center!important;transform:none!important;max-width:100%!important;max-height:100%!important;filter:none!important;box-sizing:border-box!important;margin-left:auto!important;margin-right:auto!important}
+.pic.shirt img{width:82%!important;height:88%!important;object-fit:contain!important;padding:0!important;margin:0 auto!important}
+.pic.bottle img{width:88%!important;height:92%!important;object-fit:contain!important;object-position:center center!important;padding:0!important;transform:none!important;margin:0 auto!important}
+.pic.shaker img{width:92%!important;height:92%!important;object-fit:contain!important;padding:0!important;transform:none!important;margin:0 auto!important}
 .cart-icon img{object-fit:contain!important;transform:none!important;padding:5px!important}
