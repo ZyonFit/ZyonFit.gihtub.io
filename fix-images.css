@@ -1,13 +1,7 @@
 .pic{overflow:hidden;background:radial-gradient(circle at 50% 45%,#1b211e 0,#0c100e 58%,#070807 100%)}
 .pic img{display:block!important;object-position:center center!important;transform:none!important;max-width:100%!important;max-height:100%!important;filter:none!important;box-sizing:border-box!important}
-.pic.shirt img{width:94%!important;height:94%!important;object-fit:contain!important;padding:0!important}
-/* centralização das camisetas pelo centro real do produto dentro das imagens */
-.pic.shirt img[src*="camiseta-preta.png"]{transform:translateX(-2.7%)!important}
-.pic.shirt img[src*="camiseta-branca.png"]{transform:translateX(-2.5%)!important}
-.pic.shirt img[src*="camiseta-cinza.png"]{transform:translateX(-2.9%)!important}
-.pic.shirt img[src*="camiseta-preta-verde.png"]{transform:translateX(-0.7%)!important}
-.pic.shirt img[src*="camiseta-branca-verde.png"]{transform:translateX(-0.7%)!important}
-.pic.shirt img[src*="camiseta-cinza-verde.png"]{transform:translateX(-0.7%)!important}
+/* camisetas: imagens já recortadas e com fundo transparente */
+.pic.shirt img{width:94%!important;height:94%!important;object-fit:contain!important;object-position:center center!important;padding:0!important;transform:none!important}
 .pic.bottle img{width:88%!important;height:92%!important;object-fit:contain!important;object-position:center center!important;padding:0!important;transform:none!important}
 .pic.shaker img{width:92%!important;height:92%!important;object-fit:contain!important;padding:0!important;transform:none!important}
 .cart-icon img{object-fit:contain!important;transform:none!important;padding:5px!important}
