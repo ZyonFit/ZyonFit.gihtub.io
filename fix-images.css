@@ -3,8 +3,21 @@
 .pic.bottle img{transform:scale(2.15)!important;padding:0!important}
 .pic.shaker img{transform:scale(2.05)!important;padding:0!important}
 .cart-icon img{width:100%!important;height:100%!important;object-fit:contain!important;padding:5px!important;transform:none!important}
-/* Camisetas novas: recorte direto do sprite HQ, sem SVG intermediário */
-.pic.shirt .shirt-sprite{width:100%!important;height:100%!important;background-image:url('assets/zyon-shirts-2026.webp?v=shirt-hq4')!important;background-repeat:no-repeat!important;background-size:200% 200%!important;background-color:transparent!important;display:block!important;transform:none!important;filter:none!important;}
+
+/* Sprite das camisetas: 4 colunas x 2 linhas.
+   [0,0] branca frente | [1,0] branca costas | [2,0] preta frente | [3,0] preta costas
+   [0,1] verde frente  | [1,1] verde costas  | [2,1] cinza frente | [3,1] cinza costas */
+.pic.shirt .shirt-sprite{
+  width:100%!important;
+  height:100%!important;
+  background-image:url('assets/zyon-shirts-2026.webp?v=shirt-hq5')!important;
+  background-repeat:no-repeat!important;
+  background-size:400% 200%!important;
+  background-color:transparent!important;
+  display:block!important;
+  transform:none!important;
+  filter:none!important;
+}
 .pic.shirt .shirt-white{background-position:0 0!important;}
 .pic.shirt .shirt-green{background-position:0 100%!important;}
-.pic.shirt .shirt-gray{background-position:100% 100%!important;}
+.pic.shirt .shirt-gray{background-position:66.6667% 100%!important;}
