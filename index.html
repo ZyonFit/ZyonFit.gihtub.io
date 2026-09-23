@@ -14,10 +14,10 @@ const products=[
 let filter='Todos',cart=[];try{cart=JSON.parse(localStorage.getItem('zyonCart')||'[]')}catch(e){}
 const money=v=>v.toLocaleString('pt-BR',{style:'currency',currency:'BRL'});
 function shirtBox(p){
-  if(p.id===10) return '<img class="shirt-clean-img" src="assets/camiseta-branca-hq.webp?v=white1" alt="'+p.n+'" loading="eager">';
-  if(p.id===14) return '<img class="shirt-clean-img" src="assets/camiseta-cinza-hq.webp?v=gray1" alt="'+p.n+'" loading="eager">';
-  if(p.id===15) return '<img class="shirt-clean-img" src="assets/camiseta-verde-hq.webp?v=green1" alt="'+p.n+'" loading="eager">';
-  if(p.id===6) return '<img class="shirt-clean-img" src="assets/zyon-preta-frente-hq.webp?v=hq4" alt="'+p.n+'" loading="eager">';
+  if(p.id===10) return '<img class="shirt-clean-img" src="assets/camiseta-branca.png?v=white2" alt="'+p.n+'" loading="eager">';
+  if(p.id===14) return '<img class="shirt-clean-img" src="assets/camiseta-cinza.png?v=gray2" alt="'+p.n+'" loading="eager">';
+  if(p.id===15) return '<img class="shirt-clean-img" src="assets/camiseta-verde-hq.webp?v=green2" alt="'+p.n+'" loading="eager">';
+  if(p.id===6) return '<img class="shirt-clean-img" src="assets/zyon-preta-frente-hq.webp?v=hq5" alt="'+p.n+'" loading="eager">';
   return '<img class="shirt-clean-img" src="'+p.img+'" alt="'+p.n+'" loading="eager">';
 }
 function render(){const q=(document.getElementById('search').value||'').toLowerCase();const list=products.filter(p=>(filter==='Todos'||p.c===filter)&&p.n.toLowerCase().includes(q));document.getElementById('info').textContent=list.length+' produtos';document.getElementById('grid').innerHTML=list.map(p=>`<article class="card"><div class="pic ${p.type}">${p.t?`<span class="tag">${p.t}</span>`:''}${p.type==='shirt'?shirtBox(p):`<img src="${p.img}" alt="${p.n}" loading="lazy">`}</div><small>${p.c.toUpperCase()}</small><h3>${p.n}</h3><div class="price"><strong>${money(p.p)}</strong>${p.o?`<span class="old">${money(p.o)}</span>`:''}</div><button class="add" onclick="add(${p.id})">ADICIONAR AO CARRINHO</button></article>`).join('')||'<p>Nenhum produto encontrado.</p>';renderCart()}
