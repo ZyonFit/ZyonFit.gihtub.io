@@ -14,9 +14,9 @@ const products=[
 let filter='Todos',cart=[];try{cart=JSON.parse(localStorage.getItem('zyonCart')||'[]')}catch(e){}
 const money=v=>v.toLocaleString('pt-BR',{style:'currency',currency:'BRL'});
 function shirtBox(p){
-  if(p.id===10) return '<div class="shirt-sprite shirt-white" role="img" aria-label="'+p.n+'"></div>';
-  if(p.id===14) return '<div class="shirt-sprite shirt-gray" role="img" aria-label="'+p.n+'"></div>';
-  if(p.id===15) return '<div class="shirt-sprite shirt-green" role="img" aria-label="'+p.n+'"></div>';
+  if(p.id===10) return '<img class="shirt-clean-img" src="assets/camiseta-branca-hq.webp?v=white1" alt="'+p.n+'" loading="eager">';
+  if(p.id===14) return '<img class="shirt-clean-img" src="assets/camiseta-cinza-hq.webp?v=gray1" alt="'+p.n+'" loading="eager">';
+  if(p.id===15) return '<img class="shirt-clean-img" src="assets/camiseta-verde-hq.webp?v=green1" alt="'+p.n+'" loading="eager">';
   if(p.id===6) return '<img class="shirt-clean-img" src="assets/zyon-preta-frente-hq.webp?v=hq4" alt="'+p.n+'" loading="eager">';
   return '<img class="shirt-clean-img" src="'+p.img+'" alt="'+p.n+'" loading="eager">';
 }
