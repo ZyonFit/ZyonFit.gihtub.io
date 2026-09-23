@@ -14,7 +14,7 @@ const products=[
 let filter='Todos',cart=[];try{cart=JSON.parse(localStorage.getItem('zyonCart')||'[]')}catch(e){}
 const money=v=>v.toLocaleString('pt-BR',{style:'currency',currency:'BRL'});
 function shirtBox(p){
-  if(p.id===10) return '<img class="shirt-clean-img" src="assets/camiseta-branca-hq2.webp?v=white3" alt="'+p.n+'" loading="eager">';
+  if(p.id===10) return '<img class="shirt-clean-img" src="assets/camiseta-branca-original.png?v=white4" alt="'+p.n+'" loading="eager">';
   if(p.id===14) return '<img class="shirt-clean-img" src="assets/camiseta-cinza.png?v=gray2" alt="'+p.n+'" loading="eager">';
   if(p.id===15) return '<img class="shirt-clean-img" src="assets/camiseta-verde-hq.webp?v=green2" alt="'+p.n+'" loading="eager">';
   if(p.id===6) return '<img class="shirt-clean-img" src="assets/zyon-preta-frente-hq.webp?v=hq5" alt="'+p.n+'" loading="eager">';
